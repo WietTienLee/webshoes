@@ -1,0 +1,22 @@
+$colors: (
+    "White": #ffffff,
+    "Black": #303841,
+    "Gray": #777777,
+    "Yellow": #f6c90e,
+);
+$main-bg: #fff;
+$main-color: #303841;
+$main-color-yellow: #f6c90e;
+$txt-main-color: #000;
+$txt-second-color: #777777;
+$mobile-width: 480px;
+$tablet-width: 800px;
+$txt-white: #fff;
+@each $color, $val in $colors {
+    .color-#{$color} {
+        color: $val;
+    }
+    .bg-#{$color} {
+        background-color: $val;
+    }
+}
